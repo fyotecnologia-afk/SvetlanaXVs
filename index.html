@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Svetlana | Mis XV Años</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Svetlana | Mis XV Años</title>
 
-    <!-- Color de la barra del navegador en móviles -->
-    <meta name="theme-color" content="#5E1629">
+        <!-- Color de la barra del navegador en móviles -->
+        <meta name="theme-color" content="#5E1629">
 
-    <!-- Descripción y Open Graph (vista previa al compartir por WhatsApp, Facebook, etc.) -->
-    <meta name="description" content="Te invito a celebrar mis XV años el viernes 18 de diciembre de 2026. ¡Ven a brillar conmigo en esta noche inolvidable!">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_MX">
-    <meta property="og:site_name" content="Mis XV Años • Svetlana">
-    <meta property="og:title" content="Mis XV Años • Svetlana">
-    <meta property="og:description" content="Viernes 18 de diciembre de 2026. Confirma tu asistencia y ven a brillar conmigo en esta noche inolvidable.">
-    <!-- TODO: cambia TU-DOMINIO.com por la dirección real donde publiques la invitación.
+        <!-- Descripción y Open Graph (vista previa al compartir por WhatsApp, Facebook, etc.) -->
+        <meta name="description"
+            content="Te invito a celebrar mis XV años el viernes 18 de diciembre de 2026. ¡Ven a brillar conmigo en esta noche inolvidable!">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="es_MX">
+        <meta property="og:site_name" content="Mis XV Años • Svetlana">
+        <meta property="og:title" content="Mis XV Años • Svetlana">
+        <meta property="og:description"
+            content="Viernes 18 de diciembre de 2026. Confirma tu asistencia y ven a brillar conmigo en esta noche inolvidable.">
+        <!-- TODO: cambia TU-DOMINIO.com por la dirección real donde publiques la invitación.
          Las URL de og:image y og:url DEBEN ser absolutas (con https://) para que WhatsApp las muestre.
          Tamaño recomendado de la imagen: 1200x630 px, menos de 300 KB. -->
-    <meta property="og:image" content="https://TU-DOMINIO.com/img/svetlana-1.jpg">
-    <meta property="og:url" content="https://TU-DOMINIO.com/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mis XV Años • Svetlana">
-    <meta name="twitter:description" content="Viernes 18 de diciembre de 2026. ¡Te espero!">
-    <meta name="twitter:image" content="https://TU-DOMINIO.com/img/svetlana-1.jpg">
+        <meta property="og:image"
+            content="https://TU-DOMINIO.com/img/svetlana-1.jpg">
+        <meta property="og:url" content="https://TU-DOMINIO.com/">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Mis XV Años • Svetlana">
+        <meta name="twitter:description"
+            content="Viernes 18 de diciembre de 2026. ¡Te espero!">
+        <meta name="twitter:image"
+            content="https://TU-DOMINIO.com/img/svetlana-1.jpg">
 
-    <!-- Favicon (sello XV en vino y oro rosado, incrustado, no necesita archivo) -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%235E1629' stroke='%23D9A79C' stroke-width='3'/%3E%3Ctext x='32' y='41' font-size='26' font-family='Georgia,serif' font-weight='bold' text-anchor='middle' fill='%23FDF9FA'%3EXV%3C/text%3E%3C/svg%3E">
+        <!-- Favicon (sello XV en vino y oro rosado, incrustado, no necesita archivo) -->
+        <link rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%235E1629' stroke='%23D9A79C' stroke-width='3'/%3E%3Ctext x='32' y='41' font-size='26' font-family='Georgia,serif' font-weight='bold' text-anchor='middle' fill='%23FDF9FA'%3EXV%3C/text%3E%3C/svg%3E">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Playfair Display (Editorial), Plus Jakarta Sans (Moderna/Juvenil), Pinyon Script (Caligráfica Chic) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Google Fonts: Playfair Display (Editorial), Plus Jakarta Sans (Moderna/Juvenil), Pinyon Script (Caligráfica Chic) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
 
-    <!-- Iconos Lucide -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+        <!-- Iconos Lucide -->
+        <script src="https://unpkg.com/lucide@latest"></script>
 
-    <script>
+        <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -63,7 +71,7 @@
         }
     </script>
 
-    <style>
+        <style>
         html {
             scroll-behavior: smooth;
         }
@@ -187,528 +195,764 @@
             .wine-seal:hover { transform: none; }
         }
     </style>
-</head>
-<!-- El scroll queda bloqueado mientras el pase VIP está visible (se libera al abrirlo) -->
-<body class="flex justify-center min-h-screen antialiased selection:bg-burgundy selection:text-pearl" style="overflow:hidden;">
+    </head>
+    <!-- El scroll queda bloqueado mientras el pase VIP está visible (se libera al abrirlo) -->
+    <body
+        class="flex justify-center min-h-screen antialiased selection:bg-burgundy selection:text-pearl"
+        style="overflow:hidden;">
 
-    <!-- ==============================================================
+        <!-- ==============================================================
          1. PORTADA INTERACTIVA: PASE VIP / SOBRE DIGITAL DE LUJO
     =============================================================== -->
-    <div id="vip-pass-overlay" role="dialog" aria-modal="true" aria-label="Invitación a los XV años de Svetlana" class="fixed inset-0 z-50 flex items-center justify-center bg-plum/90 backdrop-blur-lg transition-all duration-1000 px-4">
-        
-        <!-- Destellos decorativos de fondo -->
-        <div class="absolute top-12 left-10 text-rosegold/40 sparkle pointer-events-none">
-            <i data-lucide="sparkle" class="w-6 h-6"></i>
-        </div>
-        <div class="absolute bottom-16 right-10 text-champagne/40 sparkle-delay pointer-events-none">
-            <i data-lucide="sparkle" class="w-8 h-8"></i>
-        </div>
+        <div id="vip-pass-overlay" role="dialog" aria-modal="true"
+            aria-label="Invitación a los XV años de Svetlana"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-plum/90 backdrop-blur-lg transition-all duration-1000 px-4">
 
-        <div class="w-full max-w-[420px] pearl-canvas arch-frame p-8 sm:p-11 text-center shadow-[0_30px_70px_rgba(0,0,0,0.6)] border-2 border-rosegold/60 relative overflow-hidden">
-            
-            <!-- Borde interior fino en arco -->
-            <div class="absolute inset-2.5 arch-frame border border-champagne/40 pointer-events-none"></div>
+            <!-- Destellos decorativos de fondo -->
+            <div
+                class="absolute top-12 left-10 text-rosegold/40 sparkle pointer-events-none">
+                <i data-lucide="sparkle" class="w-6 h-6"></i>
+            </div>
+            <div
+                class="absolute bottom-16 right-10 text-champagne/40 sparkle-delay pointer-events-none">
+                <i data-lucide="sparkle" class="w-8 h-8"></i>
+            </div>
 
-            <div class="relative z-10 pt-4">
-                <span class="inline-block px-3.5 py-1 rounded-full bg-blush/80 text-wine text-[11px] font-semibold uppercase tracking-[0.2em] mb-4">
-                    Pase VIP • Invitación Oficial
-                </span>
+            <div
+                class="w-full max-w-[420px] pearl-canvas arch-frame p-8 sm:p-11 text-center shadow-[0_30px_70px_rgba(0,0,0,0.6)] border-2 border-rosegold/60 relative overflow-hidden">
 
-                <p class="font-script text-4xl sm:text-5xl text-burgundy leading-none mb-1">Mis XV Años</p>
-                <h1 class="font-serif text-4xl sm:text-5xl font-bold text-plum tracking-tight mb-3">
-                    Svetlana
-                </h1>
+                <!-- Borde interior fino en arco -->
+                <div
+                    class="absolute inset-2.5 arch-frame border border-champagne/40 pointer-events-none"></div>
 
-                <div class="flex items-center justify-center gap-3 my-4">
-                    <span class="w-10 h-[1px] bg-champagne/60"></span>
-                    <i data-lucide="sparkles" class="w-4 h-4 text-champagne"></i>
-                    <span class="w-10 h-[1px] bg-champagne/60"></span>
-                </div>
-
-                <p class="text-xs text-plum/85 leading-relaxed max-w-[260px] mx-auto mb-8">
-                    Una noche mágica llena de brillo, música y momentos inolvidables está por comenzar.
-                </p>
-
-                <!-- Sello Interactivo Vino & Oro Rosado -->
-                <button id="open-pass-btn" type="button" class="group inline-flex flex-col items-center focus:outline-none cursor-pointer">
-                    <div class="wine-seal w-24 h-24 rounded-full flex flex-col items-center justify-center border-2 border-rosegold/70 relative">
-                        <div class="absolute inset-1.5 rounded-full border border-champagne/40"></div>
-                        <span class="font-serif text-2xl font-bold text-pearl tracking-widest">XV</span>
-                        <span class="font-script text-xl text-blush -mt-1">Svetlana</span>
-                    </div>
-                    <span class="mt-4 inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-burgundy group-hover:text-wine transition-colors">
-                        <span>Toca el sello para entrar</span>
-                        <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+                <div class="relative z-10 pt-4">
+                    <span
+                        class="inline-block px-3.5 py-1 rounded-full bg-blush/80 text-wine text-[11px] font-semibold uppercase tracking-[0.2em] mb-4">
+                        Pase VIP • Invitación Oficial
                     </span>
-                </button>
+
+                    <p
+                        class="font-script text-4xl sm:text-5xl text-burgundy leading-none mb-1">Mis
+                        XV Años</p>
+                    <h1
+                        class="font-serif text-4xl sm:text-5xl font-bold text-plum tracking-tight mb-3">
+                        Svetlana
+                    </h1>
+
+                    <div class="flex items-center justify-center gap-3 my-4">
+                        <span class="w-10 h-[1px] bg-champagne/60"></span>
+                        <i data-lucide="sparkles"
+                            class="w-4 h-4 text-champagne"></i>
+                        <span class="w-10 h-[1px] bg-champagne/60"></span>
+                    </div>
+
+                    <p
+                        class="text-xs text-plum/85 leading-relaxed max-w-[260px] mx-auto mb-8">
+                        Una noche mágica llena de brillo, música y momentos
+                        inolvidables está por comenzar.
+                    </p>
+
+                    <!-- Sello Interactivo Vino & Oro Rosado -->
+                    <button id="open-pass-btn" type="button"
+                        class="group inline-flex flex-col items-center focus:outline-none cursor-pointer">
+                        <div
+                            class="wine-seal w-24 h-24 rounded-full flex flex-col items-center justify-center border-2 border-rosegold/70 relative">
+                            <div
+                                class="absolute inset-1.5 rounded-full border border-champagne/40"></div>
+                            <span
+                                class="font-serif text-2xl font-bold text-pearl tracking-widest">XV</span>
+                            <span
+                                class="font-script text-xl text-blush -mt-1">Svetlana</span>
+                        </div>
+                        <span
+                            class="mt-4 inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-burgundy group-hover:text-wine transition-colors">
+                            <span>Toca el sello para entrar</span>
+                            <i data-lucide="arrow-right"
+                                class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- ==============================================================
+        <!-- ==============================================================
          CONTENEDOR PRINCIPAL DE LA INVITACIÓN (MÓVIL & DESKTOP)
          (inert mientras el pase VIP está abierto: no se puede navegar con teclado)
     =============================================================== -->
-    <main id="main-content" inert class="w-full max-w-[520px] pearl-canvas min-h-screen shadow-[0_25px_70px_rgba(45,11,20,0.25)] relative pb-28">
-        
-        <!-- Botón Flotante de Música Ambiental -->
-        <button id="sound-btn" type="button" aria-label="Activar o silenciar música" class="fixed top-4 right-4 z-40 w-11 h-11 rounded-full bg-wine/90 text-pearl backdrop-blur-md border border-rosegold/60 shadow-lg flex items-center justify-center hover:bg-burgundy hover:scale-105 transition-all cursor-pointer">
-            <i id="sound-icon" data-lucide="volume-x" class="w-4 h-4"></i>
-        </button>
+        <main id="main-content" inert
+            class="w-full max-w-[520px] pearl-canvas min-h-screen shadow-[0_25px_70px_rgba(45,11,20,0.25)] relative pb-28">
 
-        <!-- ==============================================================
-             2. HERO JUVENIL & CUENTA REGRESIVA
-        =============================================================== -->
-        <header id="inicio" class="relative pt-10 pb-12 px-5 text-center overflow-hidden">
-            
-            <!-- Fondo decorativo superior en degradado vino -->
-            <div class="absolute top-0 inset-x-0 h-64 bg-gradient-to-b from-wine via-burgundy/90 to-transparent rounded-b-[48px] -z-0"></div>
-
-            <div class="relative z-10">
-                <!-- Monograma Superior -->
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pearl/15 backdrop-blur-md border border-blush/30 text-blushLight text-[11px] font-semibold uppercase tracking-[0.24em] mb-6">
-                    <i data-lucide="crown" class="w-3.5 h-3.5 text-rosegold"></i>
-                    <span>Edición Especial • XV</span>
-                </div>
-
-                <!-- Marco de Arco con Foto Principal / Arte Editorial -->
-                <div class="relative w-60 h-76 sm:w-64 sm:h-80 mx-auto mb-7">
-                    <!-- Resplandor trasero -->
-                    <div class="absolute -inset-2 arch-frame bg-gradient-to-tr from-champagne via-rosegold to-blush opacity-75 blur-[2px]"></div>
-                    <!-- Contenedor de imagen en arco -->
-                    <div class="relative w-full h-full arch-frame overflow-hidden border-2 border-pearl shadow-2xl bg-plum">
-                        <img src="./img/svetlana-1.jpg?auto=format&fit=crop&w=700&q=85" alt="Svetlana XV Años" class="w-full h-full object-cover photo-glam">
-                        <div class="absolute inset-0 bg-gradient-to-t from-wine/70 via-transparent to-transparent"></div>
-                        <span class="absolute bottom-3 inset-x-0 font-script text-3xl text-pearl drop-shadow">18 • 12 • 2026</span>
-                    </div>
-                    <!-- Medallón flotante XV -->
-                    <div class="absolute -bottom-3 -right-2 w-14 h-14 rounded-full bg-wine text-pearl border-2 border-rosegold shadow-lg flex items-center justify-center font-serif font-bold text-lg">
-                        XV
-                    </div>
-                </div>
-
-                <!-- Título Caligráfico y Nombre -->
-                <p class="font-script text-4xl sm:text-5xl text-burgundy leading-none">Mis XV Años</p>
-                <h1 class="font-serif text-5xl sm:text-6xl font-bold text-rosegold-gradient tracking-tight mt-1 mb-3">
-                    Svetlana
-                </h1>
-
-                <p class="text-xs sm:text-sm text-plum/85 max-w-xs mx-auto leading-relaxed font-normal">
-                    “Hoy dejo atrás mi niñez para abrazar mis sueños más grandes. ¡Ven a brillar conmigo en esta noche inolvidable!”
-                </p>
-
-                <!-- Fecha y Sede -->
-                <div class="mt-7 inline-block glass-card px-6 py-3.5 rounded-2xl shadow-sm">
-                    <p class="text-xs font-bold uppercase tracking-[0.2em] text-wine">
-                        Viernes • 18 de Diciembre • 2026
-                    </p>
-                </div>
-
-                <!-- Cuenta Regresiva en Tiempo Real -->
-                <div class="grid grid-cols-4 gap-2.5 mt-7 max-w-sm mx-auto" id="countdown-box">
-                    <div class="glass-card py-3.5 px-1 rounded-2xl shadow-sm border-b-2 border-b-burgundy">
-                        <span id="cd-days" class="block font-serif text-2xl sm:text-3xl font-bold text-wine leading-none">00</span>
-                        <span class="text-[11px] font-semibold uppercase tracking-[0.12em] text-plum/80 mt-1.5 block">Días</span>
-                    </div>
-                    <div class="glass-card py-3.5 px-1 rounded-2xl shadow-sm border-b-2 border-b-burgundy">
-                        <span id="cd-hours" class="block font-serif text-2xl sm:text-3xl font-bold text-wine leading-none">00</span>
-                        <span class="text-[11px] font-semibold uppercase tracking-[0.12em] text-plum/80 mt-1.5 block">Horas</span>
-                    </div>
-                    <div class="glass-card py-3.5 px-1 rounded-2xl shadow-sm border-b-2 border-b-burgundy">
-                        <span id="cd-minutes" class="block font-serif text-2xl sm:text-3xl font-bold text-wine leading-none">00</span>
-                        <span class="text-[11px] font-semibold uppercase tracking-[0.12em] text-plum/80 mt-1.5 block">Min</span>
-                    </div>
-                    <div class="glass-card py-3.5 px-1 rounded-2xl shadow-sm border-b-2 border-b-burgundy">
-                        <span id="cd-seconds" class="block font-serif text-2xl sm:text-3xl font-bold text-burgundy leading-none">00</span>
-                        <span class="text-[11px] font-semibold uppercase tracking-[0.12em] text-plum/80 mt-1.5 block">Seg</span>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="px-5 space-y-12">
-
-            <!-- ==============================================================
-                 3. MIS PADRES Y PADRINOS
-            =============================================================== -->
-            <section class="reveal text-center">
-                <span class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Con la bendición de</span>
-                <h2 class="font-serif text-3xl font-bold text-plum mb-6">Mis Padres &amp; Padrinos</h2>
-
-                <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-sm relative overflow-hidden">
-                    <!-- Detalle de esquina rosada -->
-                    <div class="absolute -top-10 -right-10 w-28 h-28 rounded-full bg-blush/60 pointer-events-none"></div>
-
-                    <div class="relative z-10 space-y-6">
-                        <div>
-                            <span class="inline-block px-3 py-0.5 rounded-full bg-wine/10 text-wine text-[11px] font-bold uppercase tracking-[0.18em] mb-2">
-                                Mi Madre
-                            </span>
-                            <p class="font-serif text-xl font-semibold text-plum">Montserrat García</p>
-                        </div>
-
-                        <div class="flex items-center justify-center gap-3">
-                            <span class="w-12 h-[1px] bg-rosegold/60"></span>
-                            <i data-lucide="heart" class="w-3.5 h-3.5 text-burgundy fill-burgundy/20"></i>
-                            <span class="w-12 h-[1px] bg-rosegold/60"></span>
-                        </div>
-
-                        <div>
-                            <span class="inline-block px-3 py-0.5 rounded-full bg-wine/10 text-wine text-[11px] font-bold uppercase tracking-[0.18em] mb-2">
-                                Mi Madrina
-                            </span>
-                            <p class="font-serif text-xl font-semibold text-plum">Joselyn Torres García</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==============================================================
-                 4. ITINERARIO VISUAL & UBICACIONES
-            =============================================================== -->
-            <section id="itinerario" class="reveal">
-                <div class="text-center mb-7">
-                    <span class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Paso a paso</span>
-                    <h2 class="font-serif text-3xl font-bold text-plum">Itinerario de la Noche</h2>
-                </div>
-
-                <div class="space-y-4">
-                    <!-- Evento 1: Misa -->
-                    <div class="glass-card rounded-3xl p-5 sm:p-6 shadow-sm hover:border-burgundy/50 transition-all">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-wine to-burgundy text-pearl flex items-center justify-center shrink-0 shadow-md">
-                                <i data-lucide="church" class="w-5 h-5"></i>
-                            </div>
-                            <div class="flex-1 text-left min-w-0">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs font-bold text-burgundy tracking-wider">06:00 p.m.</span>
-                                    <span class="text-[11px] uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-blush text-wine font-semibold">Misa</span>
-                                </div>
-                                <h3 class="font-serif text-xl font-bold text-plum mt-1">Misa de Acción de Gracias</h3>
-                                <p class="text-xs text-plum/85 mt-1">Parroquia de Jesús Obrero y Santa María de Guadalupe</p>
-
-                                <!-- TODO: escribe aquí la dirección exacta de la parroquia (calle, número, colonia, ciudad).
-                                     No la puse yo porque hay más de una parroquia con ese nombre en Puebla. -->
-                                <p class="flex items-start gap-1.5 text-xs text-plum/85 mt-2">
-                                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-burgundy shrink-0 mt-0.5"></i>
-                                    <span>[COMPLETAR: dirección de la parroquia]</span>
-                                </p>
-                                
-                                <a href="https://maps.app.goo.gl/wfpRqnH19G2Vpm3T8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-3.5 px-4 py-2 rounded-full bg-wine text-pearl text-[11px] font-semibold uppercase tracking-[0.16em] hover:bg-burgundy transition-colors">
-                                    <i data-lucide="navigation" class="w-3 h-3"></i>
-                                    <span>Cómo llegar</span>
-                                </a>
-
-                                <!-- Mapa embebido (se carga solo al desplegar) -->
-                                <details class="mt-3">
-                                    <summary class="inline-flex items-center gap-1 cursor-pointer text-[11px] font-semibold uppercase tracking-[0.16em] text-burgundy hover:text-wine">
-                                        <span>Ver mapa aquí</span>
-                                        <i data-lucide="chevron-down" class="chevron w-3.5 h-3.5 transition-transform"></i>
-                                    </summary>
-                                    <iframe
-                                        title="Mapa de la Parroquia de Jesús Obrero y Santa María de Guadalupe"
-                                        src="https://www.google.com/maps?q=Parroquia+de+Jes%C3%BAs+Obrero+y+Santa+Mar%C3%ADa+de+Guadalupe,+Puebla&output=embed"
-                                        loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"
-                                        allowfullscreen
-                                        class="w-full h-52 mt-3 rounded-2xl border border-rosegold/50"></iframe>
-                                </details>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Evento 2: Recepción & Cóctel -->
-                    <div class="glass-card rounded-3xl p-5 sm:p-6 shadow-sm hover:border-burgundy/50 transition-all">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-burgundy to-champagne text-pearl flex items-center justify-center shrink-0 shadow-md">
-                                <i data-lucide="wine" class="w-5 h-5"></i>
-                            </div>
-                            <div class="flex-1 text-left min-w-0">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs font-bold text-burgundy tracking-wider">08:30 p.m.</span>
-                                    <span class="text-[11px] uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-blush text-wine font-semibold">Bienvenida</span>
-                                </div>
-                                <h3 class="font-serif text-xl font-bold text-plum mt-1">Recepción</h3>
-                                <p class="text-xs text-plum/85 mt-1">Salón de fiestas Bellini y Toscana</p>
-
-                                <!-- Verifica que esta dirección sea la correcta -->
-                                <p class="flex items-start gap-1.5 text-xs text-plum/85 mt-2">
-                                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-burgundy shrink-0 mt-0.5"></i>
-                                    <span>Guayacán 91, Arboledas de Guadalupe, C.P. 72570, Puebla, Pue.</span>
-                                </p>
-                                
-                                <a href="https://maps.app.goo.gl/z6iEgq6oFSC9efgb6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-3.5 px-4 py-2 rounded-full bg-wine text-pearl text-[11px] font-semibold uppercase tracking-[0.16em] hover:bg-burgundy transition-colors">
-                                    <i data-lucide="navigation" class="w-3 h-3"></i>
-                                    <span>Ver en Google Maps</span>
-                                </a>
-
-                                <!-- Mapa embebido (se carga solo al desplegar) -->
-                                <details class="mt-3">
-                                    <summary class="inline-flex items-center gap-1 cursor-pointer text-[11px] font-semibold uppercase tracking-[0.16em] text-burgundy hover:text-wine">
-                                        <span>Ver mapa aquí</span>
-                                        <i data-lucide="chevron-down" class="chevron w-3.5 h-3.5 transition-transform"></i>
-                                    </summary>
-                                    <iframe
-                                        title="Mapa del Salón de fiestas Bellini y Toscana"
-                                        src="https://www.google.com/maps?q=Salon+Bellini+y+Toscana,+Guayacan+91,+Arboledas+de+Guadalupe,+Puebla&output=embed"
-                                        loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"
-                                        allowfullscreen
-                                        class="w-full h-52 mt-3 rounded-2xl border border-rosegold/50"></iframe>
-                                </details>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==============================================================
-                 5. CÓDIGO DE VESTIMENTA (COCKTAIL / ETIQUETA CHIC)
-            =============================================================== -->
-            <section class="reveal text-center">
-                <span class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Look &amp; Estilo</span>
-                <h2 class="font-serif text-3xl font-bold text-plum mb-5">Código de Vestimenta</h2>
-
-                <div class="glass-card rounded-3xl p-6 sm:p-7 shadow-sm">
-                    <div class="inline-flex items-center gap-2 text-wine mb-2">
-                        <i data-lucide="shirt" class="w-4 h-4"></i>
-                        <span class="font-serif text-xl font-bold">Etiqueta</span>
-                    </div>
-                    <p class="text-xs text-plum/85 leading-relaxed mb-6">
-                        Queremos que luzcas increíble. Te sugerimos esta paleta de colores que armoniza con la temática de la noche (toca un tono para ver su nombre):
-                    </p>
-
-                    <!-- Círculos Interactivos de Paleta -->
-                    <div class="flex justify-center items-center gap-4 mb-4">
-                        <button type="button" onclick="selectDressColor('Champán Perlado')" class="group flex flex-col items-center gap-1.5 cursor-pointer focus:outline-none">
-                            <span class="w-11 h-11 rounded-full bg-[#EFE0D1] border-2 border-white shadow-md group-hover:scale-110 transition-transform"></span>
-                            <span class="text-[11px] font-medium text-plum/85">Champán</span>
-                        </button>
-
-                        <button type="button" onclick="selectDressColor('Palo de Rosa / Blush')" class="group flex flex-col items-center gap-1.5 cursor-pointer focus:outline-none">
-                            <span class="w-11 h-11 rounded-full bg-[#E3B4C0] border-2 border-white shadow-md group-hover:scale-110 transition-transform"></span>
-                            <span class="text-[11px] font-medium text-plum/85">Palo Rosa</span>
-                        </button>
-
-                        <button type="button" onclick="selectDressColor('Dorado Suave / Rose Gold')" class="group flex flex-col items-center gap-1.5 cursor-pointer focus:outline-none">
-                            <span class="w-11 h-11 rounded-full bg-[#C89666] border-2 border-white shadow-md group-hover:scale-110 transition-transform"></span>
-                            <span class="text-[11px] font-medium text-plum/85">Dorado</span>
-                        </button>
-
-                        <button type="button" onclick="selectDressColor('Negro Elegante')" class="group flex flex-col items-center gap-1.5 cursor-pointer focus:outline-none">
-                            <span class="w-11 h-11 rounded-full bg-[#1F171A] border-2 border-white shadow-md group-hover:scale-110 transition-transform"></span>
-                            <span class="text-[11px] font-medium text-plum/85">Negro</span>
-                        </button>
-                    </div>
-
-                    <p id="selected-color-label" aria-live="polite" class="text-[12px] font-semibold text-burgundy h-4 mb-4"></p>
-
-                    <div class="bg-wine text-pearl text-xs py-2.5 px-4 rounded-2xl flex items-center justify-center gap-2 shadow-sm">
-                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-rosegold shrink-0"></i>
-                        <span>Por favor reserva los tonos <strong>Vino y Rojo</strong> exclusivamente para la Quinceañera.</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==============================================================
-                 6. GALERÍA / MAGAZINE CON LIGHTBOX
-            =============================================================== -->
-            <section id="galeria" class="reveal text-center">
-                <h2 class="font-serif text-3xl font-bold text-plum mb-2">Galería</h2>
-                <p class="text-xs text-plum/80 mb-6">Toca cualquier foto para verla en pantalla completa</p>
-
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Foto Principal Alta con Arco Superior -->
-                    <div role="button" tabindex="0" aria-label="Ver foto 1 en pantalla completa" class="row-span-2 h-76 sm:h-84 rounded-t-full rounded-b-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer bg-blush" onclick="openLightbox(0)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(0);}">
-                        <img src="./img/svetlana-1.jpg" alt="Sesión juvenil Svetlana" loading="lazy" class="w-full h-full object-cover photo-glam">
-                    </div>
-
-                    <!-- Foto 2 -->
-                    <div role="button" tabindex="0" aria-label="Ver foto 2 en pantalla completa" class="h-36 sm:h-40 rounded-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer bg-blush" onclick="openLightbox(1)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(1);}">
-                        <img src="./img/svetlana-4.jpg" alt="Flores vino y rosa" loading="lazy" class="w-full h-full object-cover photo-glam">
-                    </div>
-
-                    <!-- Foto 3 -->
-                    <div role="button" tabindex="0" aria-label="Ver foto 3 en pantalla completa" class="h-36 sm:h-40 rounded-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer bg-blush" onclick="openLightbox(2)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(2);}">
-                        <img src="./img/svetlana-5.jpg" alt="Celebración juvenil" loading="lazy" class="w-full h-full object-cover photo-glam">
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==============================================================
-                 7. MESA DE REGALOS CON COPIA RÁPIDA Y TOAST
-            =============================================================== -->
-            <section class="reveal text-center">
-                <span class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Detalles con cariño</span>
-                <h2 class="font-serif text-3xl font-bold text-plum mb-3">Mesa de Regalos</h2>
-                <p class="text-xs text-plum/85 max-w-xs mx-auto mb-6 leading-relaxed">
-                    Tu compañía en este día tan especial es mi mejor regalo, pero si deseas obsequiarme un detalle:
-                </p>
-
-                <div class="space-y-3.5">
-                    <!-- Lluvia de sobres -->
-                    <div class="glass-card rounded-3xl p-5 shadow-sm flex items-center gap-4 text-left">
-                        <div class="w-12 h-12 rounded-2xl bg-blush text-wine flex items-center justify-center shrink-0">
-                            <i data-lucide="mail-open" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-serif text-lg font-bold text-plum">Lluvia de Sobres</h3>
-                            <p class="text-xs text-plum/80">Habrá un cofre especial en la entrada del salón para depositar tu sobre.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==============================================================
-                 8. RSVP INTERACTIVO + SUGERENCIA DE CANCIÓN + MURO DE DESEOS
-            =============================================================== -->
-            <section id="rsvp" class="reveal text-center">
-                <span class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Confirma tu lugar</span>
-                <h2 class="font-serif text-3xl font-bold text-plum mb-2">RSVP &amp; Playlist</h2>
-                <p class="text-xs text-plum/85 mb-6">Confirma tu asistencia por WhatsApp y dinos qué canción no puede faltar.</p>
-
-                <form id="rsvp-form" novalidate class="glass-card rounded-3xl p-6 sm:p-7 text-left space-y-4 shadow-md">
-                    <div>
-                        <label for="guest-name" class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
-                            Tu Nombre Completo *
-                        </label>
-                        <input type="text" id="guest-name" required maxlength="80" autocomplete="name" placeholder="Ej. Sofi Martínez" class="w-full px-4 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy">
-                        <p id="guest-name-error" role="alert" class="hidden text-[12px] font-medium text-[#B42318] mt-1.5">Por favor escribe tu nombre completo.</p>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-3">
-                        <div id="attend-wrapper">
-                            <label for="guest-attend" class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
-                                ¿Asistirás? *
-                            </label>
-                            <select id="guest-attend" class="w-full px-3.5 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy">
-                                <option value="si">¡Sí, ahí estaré!</option>
-                                <option value="no">No podré asistir</option>
-                            </select>
-                        </div>
-
-                        <div id="passes-wrapper">
-                            <label for="guest-passes" class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
-                                Pases
-                            </label>
-                            <select id="guest-passes" class="w-full px-3.5 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy">
-                                <option value="1 Pase">1 Pase</option>
-                                <option value="2 Pases">2 Pases</option>
-                                <option value="3 Pases">3 Pases</option>
-                                <option value="4 Pases">4 Pases</option>
-                                <option value="5 Pases">5 Pases</option>
-                                <option value="6 Pases">6 Pases</option>
-                                <option value="7 Pases">7 Pases</option>
-                                <option value="8 Pases">8 Pases</option>
-                                <option value="9 Pases">9 Pases</option>
-                                <option value="10 Pases">10 Pases</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <!-- Campo Juvenil: Canción para el DJ -->
-                    <div>
-                        <label for="guest-song" class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
-                            Canción que no puede faltar en la pista
-                        </label>
-                        <div class="relative">
-                            <i data-lucide="music" class="w-4 h-4 text-burgundy absolute left-3.5 top-3"></i>
-                            <input type="text" id="guest-song" maxlength="100" placeholder="Ej. Tití Me Preguntó / Dancing Queen" class="w-full pl-10 pr-4 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="guest-message" class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
-                            Mensaje para Svetlana
-                        </label>
-                        <textarea id="guest-message" rows="3" maxlength="300" placeholder="Déjale tus mejores deseos a la quinceañera..." class="w-full px-4 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy resize-none"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full py-3.5 rounded-full bg-gradient-to-r from-wine via-burgundy to-wine text-pearl text-xs font-bold uppercase tracking-[0.2em] shadow-lg hover:opacity-95 active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2">
-                        <i data-lucide="send" class="w-4 h-4"></i>
-                        <span>Confirmar por WhatsApp</span>
-                    </button>
-                </form>
-            </section>
-
-            <!-- FOOTER -->
-            <footer class="pt-6 pb-4 text-center border-t border-rosegold/40">
-                <p class="font-script text-4xl text-burgundy">Svetlana</p>
-                <p class="text-[11px] font-bold uppercase tracking-[0.26em] text-wine mt-1">Mis XV Años • 2026</p>
-                <p class="text-xs text-plum/75 mt-3">#SvetlanaXV #NocheVinoYBlush</p>
-            </footer>
-
-        </div>
-    </main>
-
-    <!-- ==============================================================
-         9. BARRA DE NAVEGACIÓN INFERIOR FLOTANTE ESTILO APP
-    =============================================================== -->
-    <nav id="bottom-nav" inert aria-label="Navegación principal" class="fixed bottom-4 left-1/2 -translate-x-1/2 w-[92%] max-w-[460px] bg-plum/95 text-pearl backdrop-blur-lg border border-rosegold/40 rounded-full z-40 px-4 py-2.5 shadow-[0_12px_30px_rgba(45,11,20,0.45)]">
-        <ul class="flex justify-around items-center">
-            <li>
-                <a href="#inicio" class="flex flex-col items-center gap-0.5 text-blush/90 hover:text-rosegold transition-colors px-2">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i>
-                    <span class="text-[11px] font-medium uppercase tracking-wider">Inicio</span>
-                </a>
-            </li>
-            <li>
-                <a href="#itinerario" class="flex flex-col items-center gap-0.5 text-blush/90 hover:text-rosegold transition-colors px-2">
-                    <i data-lucide="calendar-heart" class="w-4 h-4"></i>
-                    <span class="text-[11px] font-medium uppercase tracking-wider">Evento</span>
-                </a>
-            </li>
-            <li>
-                <a href="#galeria" class="flex flex-col items-center gap-0.5 text-blush/90 hover:text-rosegold transition-colors px-2">
-                    <i data-lucide="camera" class="w-4 h-4"></i>
-                    <span class="text-[11px] font-medium uppercase tracking-wider">Fotos</span>
-                </a>
-            </li>
-            <li>
-                <a href="#rsvp" class="flex items-center gap-1.5 bg-gradient-to-r from-burgundy to-champagne text-pearl px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider shadow-sm hover:opacity-95 transition-opacity">
-                    <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
-                    <span>RSVP</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- ==============================================================
-         NOTIFICACIÓN TOAST FLOTANTE (COPIAR CLABE / CONFIRMACIÓN)
-    =============================================================== -->
-    <div id="toast-notification" role="status" aria-live="polite" class="fixed top-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 -translate-y-4 transition-all duration-300">
-        <div class="bg-plum text-pearl border border-rosegold/60 px-5 py-2.5 rounded-full shadow-xl flex items-center gap-2 text-xs font-medium">
-            <i data-lucide="check-circle-2" class="w-4 h-4 text-rosegold"></i>
-            <span id="toast-message">¡Copiado al portapapeles!</span>
-        </div>
-    </div>
-
-    <!-- ==============================================================
-         MODAL LIGHTBOX PARA GALERÍA (con anterior / siguiente)
-    =============================================================== -->
-    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Galería de fotos" class="fixed inset-0 z-50 hidden bg-plum/92 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
-        <div class="relative max-w-md w-full bg-pearl p-3 rounded-3xl shadow-2xl border border-rosegold/50" onclick="event.stopPropagation()">
-            <button type="button" id="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar foto" class="absolute -top-3 -right-3 z-10 w-9 h-9 rounded-full bg-wine text-pearl border border-rosegold flex items-center justify-center shadow-lg cursor-pointer">
-                <i data-lucide="x" class="w-4 h-4"></i>
+            <!-- Botón Flotante de Música Ambiental -->
+            <button id="sound-btn" type="button"
+                aria-label="Activar o silenciar música"
+                class="fixed top-4 right-4 z-40 w-11 h-11 rounded-full bg-wine/90 text-pearl backdrop-blur-md border border-rosegold/60 shadow-lg flex items-center justify-center hover:bg-burgundy hover:scale-105 transition-all cursor-pointer">
+                <i id="sound-icon" data-lucide="volume-x" class="w-4 h-4"></i>
             </button>
 
-            <div class="relative">
-                <img id="lightbox-img" src="" alt="Foto ampliada" class="w-full max-h-[72vh] object-cover rounded-2xl">
+            <!-- ==============================================================
+             2. HERO JUVENIL & CUENTA REGRESIVA
+        =============================================================== -->
+            <header id="inicio"
+                class="relative pt-10 pb-12 px-5 text-center overflow-hidden">
 
-                <button type="button" onclick="prevPhoto()" aria-label="Foto anterior" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-wine/85 text-pearl border border-rosegold/70 flex items-center justify-center shadow-lg hover:bg-burgundy transition-colors cursor-pointer">
-                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                </button>
-                <button type="button" onclick="nextPhoto()" aria-label="Foto siguiente" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-wine/85 text-pearl border border-rosegold/70 flex items-center justify-center shadow-lg hover:bg-burgundy transition-colors cursor-pointer">
-                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                </button>
+                <!-- Fondo decorativo superior en degradado vino -->
+                <div
+                    class="absolute top-0 inset-x-0 h-64 bg-gradient-to-b from-wine via-burgundy/90 to-transparent rounded-b-[48px] -z-0"></div>
+
+                <div class="relative z-10">
+                    <!-- Monograma Superior -->
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pearl/15 backdrop-blur-md border border-blush/30 text-blushLight text-[11px] font-semibold uppercase tracking-[0.24em] mb-6">
+                        <i data-lucide="crown"
+                            class="w-3.5 h-3.5 text-rosegold"></i>
+                        <span>Edición Especial • XV</span>
+                    </div>
+
+                    <!-- Marco de Arco con Foto Principal / Arte Editorial -->
+                    <div
+                        class="relative w-60 h-76 sm:w-64 sm:h-80 mx-auto mb-7">
+                        <!-- Resplandor trasero -->
+                        <div
+                            class="absolute -inset-2 arch-frame bg-gradient-to-tr from-champagne via-rosegold to-blush opacity-75 blur-[2px]"></div>
+                        <!-- Contenedor de imagen en arco -->
+                        <div
+                            class="relative w-full h-full arch-frame overflow-hidden border-2 border-pearl shadow-2xl bg-plum">
+                            <img
+                                src="./img/svetlana-1.jpg?auto=format&fit=crop&w=700&q=85"
+                                alt="Svetlana XV Años"
+                                class="w-full h-full object-cover photo-glam">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-wine/70 via-transparent to-transparent"></div>
+                            <span
+                                class="absolute bottom-3 inset-x-0 font-script text-3xl text-pearl drop-shadow">18
+                                • 12 • 2026</span>
+                        </div>
+                        <!-- Medallón flotante XV -->
+                        <div
+                            class="absolute -bottom-3 -right-2 w-14 h-14 rounded-full bg-wine text-pearl border-2 border-rosegold shadow-lg flex items-center justify-center font-serif font-bold text-lg">
+                            XV
+                        </div>
+                    </div>
+
+                    <!-- Título Caligráfico y Nombre -->
+                    <p
+                        class="font-script text-4xl sm:text-5xl text-burgundy leading-none">Mis
+                        XV Años</p>
+                    <h1
+                        class="font-serif text-5xl sm:text-6xl font-bold text-rosegold-gradient tracking-tight mt-1 mb-3">
+                        Svetlana
+                    </h1>
+
+                    <p
+                        class="text-xs sm:text-sm text-plum/85 max-w-xs mx-auto leading-relaxed font-normal">
+                        “Hoy dejo atrás mi niñez para abrazar mis sueños más
+                        grandes. ¡Ven a brillar conmigo en esta noche
+                        inolvidable!”
+                    </p>
+
+                    <!-- Fecha y Sede -->
+                    <div
+                        class="mt-7 inline-block glass-card px-6 py-3.5 rounded-2xl shadow-sm">
+                        <p
+                            class="text-xs font-bold uppercase tracking-[0.2em] text-wine">
+                            Viernes • 18 de Diciembre • 2026
+                        </p>
+                    </div>
+
+                    <!-- Cuenta Regresiva en Tiempo Real -->
+                    <div class="grid grid-cols-4 gap-2.5 mt-7 max-w-sm mx-auto"
+                        id="countdown-box">
+                        <div
+                            class="glass-card py-3.5 px-1 rounded-2xl shadow-sm border-b-2 border-b-burgundy">
+                            <span id="cd-days"
+                                class="block font-serif text-2xl sm:text-3xl font-bold text-wine leading-none">00</span>
+                            <span
+                                class="text-[11px] font-semibold uppercase tracking-[0.12em] text-plum/80 mt-1.5 block">Días</span>
+                        </div>
+                        <div
+                            class="glass-card py-3.5 px-1 rounded-2xl shadow-sm border-b-2 border-b-burgundy">
+                            <span id="cd-hours"
+                                class="block font-serif text-2xl sm:text-3xl font-bold text-wine leading-none">00</span>
+                            <span
+                                class="text-[11px] font-semibold uppercase tracking-[0.12em] text-plum/80 mt-1.5 block">Horas</span>
+                        </div>
+                        <div
+                            class="glass-card py-3.5 px-1 rounded-2xl shadow-sm border-b-2 border-b-burgundy">
+                            <span id="cd-minutes"
+                                class="block font-serif text-2xl sm:text-3xl font-bold text-wine leading-none">00</span>
+                            <span
+                                class="text-[11px] font-semibold uppercase tracking-[0.12em] text-plum/80 mt-1.5 block">Min</span>
+                        </div>
+                        <div
+                            class="glass-card py-3.5 px-1 rounded-2xl shadow-sm border-b-2 border-b-burgundy">
+                            <span id="cd-seconds"
+                                class="block font-serif text-2xl sm:text-3xl font-bold text-burgundy leading-none">00</span>
+                            <span
+                                class="text-[11px] font-semibold uppercase tracking-[0.12em] text-plum/80 mt-1.5 block">Seg</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="px-5 space-y-12">
+
+                <!-- ==============================================================
+                 3. MIS PADRES Y PADRINOS
+            =============================================================== -->
+                <section class="reveal text-center">
+                    <span
+                        class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Con
+                        la bendición de</span>
+                    <h2 class="font-serif text-3xl font-bold text-plum mb-6">Mis
+                        Padres &amp; Padrinos</h2>
+
+                    <div
+                        class="glass-card rounded-3xl p-6 sm:p-8 shadow-sm relative overflow-hidden">
+                        <!-- Detalle de esquina rosada -->
+                        <div
+                            class="absolute -top-10 -right-10 w-28 h-28 rounded-full bg-blush/60 pointer-events-none"></div>
+
+                        <div class="relative z-10 space-y-6">
+                            <div>
+                                <span
+                                    class="inline-block px-3 py-0.5 rounded-full bg-wine/10 text-wine text-[11px] font-bold uppercase tracking-[0.18em] mb-2">
+                                    Mi Madre
+                                </span>
+                                <p
+                                    class="font-serif text-xl font-semibold text-plum">Montserrat
+                                    García</p>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-3">
+                                <span
+                                    class="w-12 h-[1px] bg-rosegold/60"></span>
+                                <i data-lucide="heart"
+                                    class="w-3.5 h-3.5 text-burgundy fill-burgundy/20"></i>
+                                <span
+                                    class="w-12 h-[1px] bg-rosegold/60"></span>
+                            </div>
+
+                            <div>
+                                <span
+                                    class="inline-block px-3 py-0.5 rounded-full bg-wine/10 text-wine text-[11px] font-bold uppercase tracking-[0.18em] mb-2">
+                                    Mi Madrina
+                                </span>
+                                <p
+                                    class="font-serif text-xl font-semibold text-plum">Joselyn
+                                    Torres García</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==============================================================
+                 4. ITINERARIO VISUAL & UBICACIONES
+            =============================================================== -->
+                <section id="itinerario" class="reveal">
+                    <div class="text-center mb-7">
+                        <span
+                            class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Paso
+                            a paso</span>
+                        <h2
+                            class="font-serif text-3xl font-bold text-plum">Itinerario
+                            de la Noche</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Evento 1: Misa -->
+                        <div
+                            class="glass-card rounded-3xl p-5 sm:p-6 shadow-sm hover:border-burgundy/50 transition-all">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-wine to-burgundy text-pearl flex items-center justify-center shrink-0 shadow-md">
+                                    <i data-lucide="church" class="w-5 h-5"></i>
+                                </div>
+                                <div class="flex-1 text-left min-w-0">
+                                    <div
+                                        class="flex items-center justify-between">
+                                        <span
+                                            class="text-xs font-bold text-burgundy tracking-wider">06:00
+                                            p.m.</span>
+                                        <span
+                                            class="text-[11px] uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-blush text-wine font-semibold">Misa</span>
+                                    </div>
+                                    <h3
+                                        class="font-serif text-xl font-bold text-plum mt-1">Misa
+                                        de Acción de Gracias</h3>
+                                    <p
+                                        class="text-xs text-plum/85 mt-1">Parroquia
+                                        de Jesús Obrero y Santa María de
+                                        Guadalupe</p>
+
+                                    <!-- TODO: escribe aquí la dirección exacta de la parroquia (calle, número, colonia, ciudad).
+                                     No la puse yo porque hay más de una parroquia con ese nombre en Puebla. -->
+                                    <p
+                                        class="flex items-start gap-1.5 text-xs text-plum/85 mt-2">
+                                        <i data-lucide="map-pin"
+                                            class="w-3.5 h-3.5 text-burgundy shrink-0 mt-0.5"></i>
+                                        <span>[COMPLETAR: dirección de la
+                                            parroquia]</span>
+                                    </p>
+
+                                    <a
+                                        href="https://maps.app.goo.gl/wfpRqnH19G2Vpm3T8"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="inline-flex items-center gap-1.5 mt-3.5 px-4 py-2 rounded-full bg-wine text-pearl text-[11px] font-semibold uppercase tracking-[0.16em] hover:bg-burgundy transition-colors">
+                                        <i data-lucide="navigation"
+                                            class="w-3 h-3"></i>
+                                        <span>Cómo llegar</span>
+                                    </a>
+
+                                    <!-- Mapa embebido (se carga solo al desplegar) -->
+                                    <details class="mt-3">
+                                        <summary
+                                            class="inline-flex items-center gap-1 cursor-pointer text-[11px] font-semibold uppercase tracking-[0.16em] text-burgundy hover:text-wine">
+                                            <span>Ver mapa aquí</span>
+                                            <i data-lucide="chevron-down"
+                                                class="chevron w-3.5 h-3.5 transition-transform"></i>
+                                        </summary>
+                                        <iframe
+                                            title="Mapa de la Parroquia de Jesús Obrero y Santa María de Guadalupe"
+                                            src="https://www.google.com/maps?q=Parroquia+de+Jes%C3%BAs+Obrero+y+Santa+Mar%C3%ADa+de+Guadalupe,+Puebla&output=embed"
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            allowfullscreen
+                                            class="w-full h-52 mt-3 rounded-2xl border border-rosegold/50"></iframe>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Evento 2: Recepción & Cóctel -->
+                        <div
+                            class="glass-card rounded-3xl p-5 sm:p-6 shadow-sm hover:border-burgundy/50 transition-all">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-burgundy to-champagne text-pearl flex items-center justify-center shrink-0 shadow-md">
+                                    <i data-lucide="wine" class="w-5 h-5"></i>
+                                </div>
+                                <div class="flex-1 text-left min-w-0">
+                                    <div
+                                        class="flex items-center justify-between">
+                                        <span
+                                            class="text-xs font-bold text-burgundy tracking-wider">08:30
+                                            p.m.</span>
+                                        <span
+                                            class="text-[11px] uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-blush text-wine font-semibold">Bienvenida</span>
+                                    </div>
+                                    <h3
+                                        class="font-serif text-xl font-bold text-plum mt-1">Recepción</h3>
+                                    <p class="text-xs text-plum/85 mt-1">Salón
+                                        de fiestas Bellini y Toscana</p>
+
+                                    <!-- Verifica que esta dirección sea la correcta -->
+                                    <p
+                                        class="flex items-start gap-1.5 text-xs text-plum/85 mt-2">
+                                        <i data-lucide="map-pin"
+                                            class="w-3.5 h-3.5 text-burgundy shrink-0 mt-0.5"></i>
+                                        <span>Guayacán 91, Arboledas de
+                                            Guadalupe, C.P. 72570, Puebla,
+                                            Pue.</span>
+                                    </p>
+
+                                    <a
+                                        href="https://maps.app.goo.gl/z6iEgq6oFSC9efgb6"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="inline-flex items-center gap-1.5 mt-3.5 px-4 py-2 rounded-full bg-wine text-pearl text-[11px] font-semibold uppercase tracking-[0.16em] hover:bg-burgundy transition-colors">
+                                        <i data-lucide="navigation"
+                                            class="w-3 h-3"></i>
+                                        <span>Ver en Google Maps</span>
+                                    </a>
+
+                                    <!-- Mapa embebido (se carga solo al desplegar) -->
+                                    <details class="mt-3">
+                                        <summary
+                                            class="inline-flex items-center gap-1 cursor-pointer text-[11px] font-semibold uppercase tracking-[0.16em] text-burgundy hover:text-wine">
+                                            <span>Ver mapa aquí</span>
+                                            <i data-lucide="chevron-down"
+                                                class="chevron w-3.5 h-3.5 transition-transform"></i>
+                                        </summary>
+                                        <iframe
+                                            title="Mapa del Salón de fiestas Bellini y Toscana"
+                                            src="https://www.google.com/maps?q=Salon+Bellini+y+Toscana,+Guayacan+91,+Arboledas+de+Guadalupe,+Puebla&output=embed"
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"
+                                            allowfullscreen
+                                            class="w-full h-52 mt-3 rounded-2xl border border-rosegold/50"></iframe>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==============================================================
+                 5. CÓDIGO DE VESTIMENTA (COCKTAIL / ETIQUETA CHIC)
+            =============================================================== -->
+                <section class="reveal text-center">
+                    <span
+                        class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Look
+                        &amp; Estilo</span>
+                    <h2
+                        class="font-serif text-3xl font-bold text-plum mb-5">Código
+                        de Vestimenta</h2>
+
+                    <div class="glass-card rounded-3xl p-6 sm:p-7 shadow-sm">
+                        <div
+                            class="inline-flex items-center gap-2 text-wine mb-2">
+                            <i data-lucide="shirt" class="w-4 h-4"></i>
+                            <span
+                                class="font-serif text-xl font-bold">Etiqueta</span>
+                        </div>
+                        <p class="text-xs text-plum/85 leading-relaxed mb-6">
+                            Queremos que luzcas increíble. Te sugerimos esta
+                            paleta de colores que armoniza con la temática de la
+                            noche (toca un tono para ver su nombre):
+                        </p>
+
+                        <!-- Círculos Interactivos de Paleta -->
+                        <div
+                            class="flex justify-center items-center gap-4 mb-4">
+                            <button type="button"
+                                onclick="selectDressColor('Champán Perlado')"
+                                class="group flex flex-col items-center gap-1.5 cursor-pointer focus:outline-none">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-[#EFE0D1] border-2 border-white shadow-md group-hover:scale-110 transition-transform"></span>
+                                <span
+                                    class="text-[11px] font-medium text-plum/85">Champán</span>
+                            </button>
+
+                            <button type="button"
+                                onclick="selectDressColor('Palo de Rosa / Blush')"
+                                class="group flex flex-col items-center gap-1.5 cursor-pointer focus:outline-none">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-[#E3B4C0] border-2 border-white shadow-md group-hover:scale-110 transition-transform"></span>
+                                <span
+                                    class="text-[11px] font-medium text-plum/85">Palo
+                                    Rosa</span>
+                            </button>
+
+                            <button type="button"
+                                onclick="selectDressColor('Dorado Suave / Rose Gold')"
+                                class="group flex flex-col items-center gap-1.5 cursor-pointer focus:outline-none">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-[#C89666] border-2 border-white shadow-md group-hover:scale-110 transition-transform"></span>
+                                <span
+                                    class="text-[11px] font-medium text-plum/85">Dorado</span>
+                            </button>
+
+                            <button type="button"
+                                onclick="selectDressColor('Negro Elegante')"
+                                class="group flex flex-col items-center gap-1.5 cursor-pointer focus:outline-none">
+                                <span
+                                    class="w-11 h-11 rounded-full bg-[#1F171A] border-2 border-white shadow-md group-hover:scale-110 transition-transform"></span>
+                                <span
+                                    class="text-[11px] font-medium text-plum/85">Negro</span>
+                            </button>
+                        </div>
+
+                        <p id="selected-color-label" aria-live="polite"
+                            class="text-[12px] font-semibold text-burgundy h-4 mb-4"></p>
+
+                        <div
+                            class="bg-wine text-pearl text-xs py-2.5 px-4 rounded-2xl flex items-center justify-center gap-2 shadow-sm">
+                            <i data-lucide="sparkles"
+                                class="w-3.5 h-3.5 text-rosegold shrink-0"></i>
+                            <span>Por favor reserva los tonos <strong>Vino y
+                                    Rojo</strong> exclusivamente para la
+                                Quinceañera.</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==============================================================
+                 6. GALERÍA / MAGAZINE CON LIGHTBOX
+            =============================================================== -->
+                <section id="galeria" class="reveal text-center">
+                    <h2
+                        class="font-serif text-3xl font-bold text-plum mb-2">Galería</h2>
+                    <p class="text-xs text-plum/80 mb-6">Toca cualquier foto
+                        para verla en pantalla completa</p>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <!-- Foto Principal Alta con Arco Superior -->
+                        <div role="button" tabindex="0"
+                            aria-label="Ver foto 1 en pantalla completa"
+                            class="row-span-2 h-76 sm:h-84 rounded-t-full rounded-b-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer bg-blush"
+                            onclick="openLightbox(0)"
+                            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(0);}">
+                            <img src="./img/svetlana-1.jpg"
+                                alt="Sesión juvenil Svetlana" loading="lazy"
+                                class="w-full h-full object-cover photo-glam">
+                        </div>
+
+                        <!-- Foto 2 -->
+                        <div role="button" tabindex="0"
+                            aria-label="Ver foto 2 en pantalla completa"
+                            class="h-36 sm:h-40 rounded-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer bg-blush"
+                            onclick="openLightbox(1)"
+                            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(1);}">
+                            <img src="./img/svetlana-4.jpg"
+                                alt="Flores vino y rosa" loading="lazy"
+                                class="w-full h-full object-cover photo-glam">
+                        </div>
+
+                        <!-- Foto 3 -->
+                        <div role="button" tabindex="0"
+                            aria-label="Ver foto 3 en pantalla completa"
+                            class="h-36 sm:h-40 rounded-2xl overflow-hidden border-2 border-white shadow-md cursor-pointer bg-blush"
+                            onclick="openLightbox(2)"
+                            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(2);}">
+                            <img src="./img/svetlana-5.jpg"
+                                alt="Celebración juvenil" loading="lazy"
+                                class="w-full h-full object-cover photo-glam">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==============================================================
+                 7. MESA DE REGALOS CON COPIA RÁPIDA Y TOAST
+            =============================================================== -->
+                <section class="reveal text-center">
+                    <span
+                        class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Detalles
+                        con cariño</span>
+                    <h2
+                        class="font-serif text-3xl font-bold text-plum mb-3">Mesa
+                        de Regalos</h2>
+                    <p
+                        class="text-xs text-plum/85 max-w-xs mx-auto mb-6 leading-relaxed">
+                        Tu compañía en este día tan especial es mi mejor regalo,
+                        pero si deseas obsequiarme un detalle:
+                    </p>
+
+                    <div class="space-y-3.5">
+                        <!-- Lluvia de sobres -->
+                        <div
+                            class="glass-card rounded-3xl p-5 shadow-sm flex items-center gap-4 text-left">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-blush text-wine flex items-center justify-center shrink-0">
+                                <i data-lucide="mail-open" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-serif text-lg font-bold text-plum">Lluvia
+                                    de Sobres</h3>
+                                <p class="text-xs text-plum/80">Habrá un cofre
+                                    especial en la entrada del salón para
+                                    depositar tu sobre.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==============================================================
+                 8. RSVP INTERACTIVO + SUGERENCIA DE CANCIÓN + MURO DE DESEOS
+            =============================================================== -->
+                <section id="rsvp" class="reveal text-center">
+                    <span
+                        class="text-[11px] font-bold uppercase tracking-[0.24em] text-burgundy block mb-1">Confirma
+                        tu lugar</span>
+                    <h2
+                        class="font-serif text-3xl font-bold text-plum mb-2">RSVP
+                        &amp; Playlist</h2>
+                    <p class="text-xs text-plum/85 mb-6">Confirma tu asistencia
+                        por WhatsApp y dinos qué canción no puede faltar.</p>
+
+                    <form id="rsvp-form" novalidate
+                        class="glass-card rounded-3xl p-6 sm:p-7 text-left space-y-4 shadow-md">
+                        <div>
+                            <label for="guest-name"
+                                class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
+                                Tu Nombre Completo *
+                            </label>
+                            <input type="text" id="guest-name" required
+                                maxlength="80" autocomplete="name"
+                                placeholder="Ej. Sofi Martínez"
+                                class="w-full px-4 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy">
+                            <p id="guest-name-error" role="alert"
+                                class="hidden text-[12px] font-medium text-[#B42318] mt-1.5">Por
+                                favor escribe tu nombre completo.</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div id="attend-wrapper">
+                                <label for="guest-attend"
+                                    class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
+                                    ¿Asistirás? *
+                                </label>
+                                <select id="guest-attend"
+                                    class="w-full px-3.5 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy">
+                                    <option value="si">¡Sí, ahí estaré!</option>
+                                    <option value="no">No podré asistir</option>
+                                </select>
+                            </div>
+
+                            <div id="passes-wrapper">
+                                <label for="guest-passes"
+                                    class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
+                                    Pases
+                                </label>
+                                <select id="guest-passes"
+                                    class="w-full px-3.5 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy">
+                                    <option value="1 Pase">1 Pase</option>
+                                    <option value="2 Pases">2 Pases</option>
+                                    <option value="3 Pases">3 Pases</option>
+                                    <option value="4 Pases">4 Pases</option>
+                                    <option value="5 Pases">5 Pases</option>
+                                    <option value="6 Pases">6 Pases</option>
+                                    <option value="7 Pases">7 Pases</option>
+                                    <option value="8 Pases">8 Pases</option>
+                                    <option value="9 Pases">9 Pases</option>
+                                    <option value="10 Pases">10 Pases</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Campo Juvenil: Canción para el DJ -->
+                        <div>
+                            <label for="guest-song"
+                                class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
+                                Canción que no puede faltar en la pista
+                            </label>
+                            <div class="relative">
+                                <i data-lucide="music"
+                                    class="w-4 h-4 text-burgundy absolute left-3.5 top-3"></i>
+                                <input type="text" id="guest-song"
+                                    maxlength="100"
+                                    placeholder="Ej. Tití Me Preguntó / Dancing Queen"
+                                    class="w-full pl-10 pr-4 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="guest-message"
+                                class="block text-[11px] font-bold uppercase tracking-[0.16em] text-wine mb-1.5">
+                                Mensaje para Svetlana
+                            </label>
+                            <textarea id="guest-message" rows="3"
+                                maxlength="300"
+                                placeholder="Déjale tus mejores deseos a la quinceañera..."
+                                class="w-full px-4 py-3 rounded-xl bg-pearl border border-rosegold/50 text-xs text-plum focus:outline-none focus:border-burgundy resize-none"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full py-3.5 rounded-full bg-gradient-to-r from-wine via-burgundy to-wine text-pearl text-xs font-bold uppercase tracking-[0.2em] shadow-lg hover:opacity-95 active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Confirmar por WhatsApp</span>
+                        </button>
+                    </form>
+                </section>
+
+                <!-- FOOTER -->
+                <footer
+                    class="pt-6 pb-4 text-center border-t border-rosegold/40">
+                    <p class="font-script text-4xl text-burgundy">Svetlana</p>
+                    <p
+                        class="text-[11px] font-bold uppercase tracking-[0.26em] text-wine mt-1">Mis
+                        XV Años • 2026</p>
+                    <p class="text-xs text-plum/75 mt-3">#SvetlanaXV
+                        #NocheVinoYBlush</p>
+                </footer>
+
             </div>
+        </main>
 
-            <p id="lightbox-caption" class="font-serif italic text-center text-base text-wine mt-3 mb-0.5"></p>
-            <p id="lightbox-counter" class="text-center text-xs text-plum/75 mb-1"></p>
+        <!-- ==============================================================
+         9. BARRA DE NAVEGACIÓN INFERIOR FLOTANTE ESTILO APP
+    =============================================================== -->
+        <nav id="bottom-nav" inert aria-label="Navegación principal"
+            class="fixed bottom-4 left-1/2 -translate-x-1/2 w-[92%] max-w-[460px] bg-plum/95 text-pearl backdrop-blur-lg border border-rosegold/40 rounded-full z-40 px-4 py-2.5 shadow-[0_12px_30px_rgba(45,11,20,0.45)]">
+            <ul class="flex justify-around items-center">
+                <li>
+                    <a href="#inicio"
+                        class="flex flex-col items-center gap-0.5 text-blush/90 hover:text-rosegold transition-colors px-2">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                        <span
+                            class="text-[11px] font-medium uppercase tracking-wider">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#itinerario"
+                        class="flex flex-col items-center gap-0.5 text-blush/90 hover:text-rosegold transition-colors px-2">
+                        <i data-lucide="calendar-heart" class="w-4 h-4"></i>
+                        <span
+                            class="text-[11px] font-medium uppercase tracking-wider">Evento</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#galeria"
+                        class="flex flex-col items-center gap-0.5 text-blush/90 hover:text-rosegold transition-colors px-2">
+                        <i data-lucide="camera" class="w-4 h-4"></i>
+                        <span
+                            class="text-[11px] font-medium uppercase tracking-wider">Fotos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#rsvp"
+                        class="flex items-center gap-1.5 bg-gradient-to-r from-burgundy to-champagne text-pearl px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider shadow-sm hover:opacity-95 transition-opacity">
+                        <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+                        <span>RSVP</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ==============================================================
+         NOTIFICACIÓN TOAST FLOTANTE (COPIAR CLABE / CONFIRMACIÓN)
+    =============================================================== -->
+        <div id="toast-notification" role="status" aria-live="polite"
+            class="fixed top-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 -translate-y-4 transition-all duration-300">
+            <div
+                class="bg-plum text-pearl border border-rosegold/60 px-5 py-2.5 rounded-full shadow-xl flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="check-circle-2"
+                    class="w-4 h-4 text-rosegold"></i>
+                <span id="toast-message">¡Copiado al portapapeles!</span>
+            </div>
         </div>
-    </div>
 
-    <script>
+        <!-- ==============================================================
+         MODAL LIGHTBOX PARA GALERÍA (con anterior / siguiente)
+    =============================================================== -->
+        <div id="lightbox" role="dialog" aria-modal="true"
+            aria-label="Galería de fotos"
+            class="fixed inset-0 z-50 hidden bg-plum/92 backdrop-blur-md flex items-center justify-center p-4"
+            onclick="closeLightbox()">
+            <div
+                class="relative max-w-md w-full bg-pearl p-3 rounded-3xl shadow-2xl border border-rosegold/50"
+                onclick="event.stopPropagation()">
+                <button type="button" id="lightbox-close"
+                    onclick="closeLightbox()" aria-label="Cerrar foto"
+                    class="absolute -top-3 -right-3 z-10 w-9 h-9 rounded-full bg-wine text-pearl border border-rosegold flex items-center justify-center shadow-lg cursor-pointer">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+
+                <div class="relative">
+                    <img id="lightbox-img" src alt="Foto ampliada"
+                        class="w-full max-h-[72vh] object-cover rounded-2xl">
+
+                    <button type="button" onclick="prevPhoto()"
+                        aria-label="Foto anterior"
+                        class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-wine/85 text-pearl border border-rosegold/70 flex items-center justify-center shadow-lg hover:bg-burgundy transition-colors cursor-pointer">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+                    <button type="button" onclick="nextPhoto()"
+                        aria-label="Foto siguiente"
+                        class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-wine/85 text-pearl border border-rosegold/70 flex items-center justify-center shadow-lg hover:bg-burgundy transition-colors cursor-pointer">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <p id="lightbox-caption"
+                    class="font-serif italic text-center text-base text-wine mt-3 mb-0.5"></p>
+                <p id="lightbox-counter"
+                    class="text-center text-xs text-plum/75 mb-1"></p>
+            </div>
+        </div>
+
+        <script>
         // Inicializar iconos Lucide
         lucide.createIcons();
 
@@ -718,7 +962,7 @@
         //    - Si no existe (o falla), se usa la música sintetizada de respaldo.
         //    - Para usar SOLO la sintetizada, deja MUSIC_FILE = "".
         // ==========================================
-        const MUSIC_FILE = "./audio/musica.mp3"; // 👈 pon aquí tu mp3 (con permiso de uso)
+        const MUSIC_FILE = "./music/musica.mp3"; // 👈 pon aquí tu mp3 (con permiso de uso)
         const MUSIC_VOLUME = 0.6;
 
         let bgAudio = null;
@@ -1069,5 +1313,5 @@
             }
         });
     </script>
-</body>
+    </body>
 </html>
